@@ -1,6 +1,6 @@
 # zsh-presenter-mode
 
-[![License: MIT][license icon]][license]
+[![License: MIT][license badge]][license] [![Maintenance][maintenance badge]]()
 
 This plugin is designed to expand aliases during presentations.
 It also increases the terminal window's contrast to enhance visibility.
@@ -56,8 +56,9 @@ The MIT License (MIT)
 
 Copyright (c) 2019 idadzie
 
-[license icon]: https://img.shields.io/badge/License-MIT-green.svg
+[license badge]: https://img.shields.io/badge/License-MIT-green.svg
 [license]: https://opensource.org/licenses/MIT
+[maintenance badge]: https://img.shields.io/maintenance/yes/2020.svg
 [zplugin]: https://github.com/zdharma/zplugin
 [robo]: https://github.com/robobenklein
 [dotfiles]: https://github.com/robobenklein/configs
