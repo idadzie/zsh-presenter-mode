@@ -5,9 +5,15 @@
 
 # Then ${0:h} to get plugin's directory
 
-export TERM_EMULATOR_BG_DEFAULT
-TERM_EMULATOR_BG_DEFAULT=$(source ${0:h}/term-emulator-bg-default.sh)
+typeset -g TERM_EMULATOR_BG_DEFAULT
 
+if [[ -z "$TMUX" ]]; then
+  : ${TERM_EMULATOR_BG_DEFAULT:=$(source ${0:h}/bin/get-terminal-emulator-bg-color)}
+elif [[ -n "$TMUX" ]]; then
+  : ${TERM_EMULATOR_BG_DEFAULT:='rgb:2828/2828/2828'}
+fi
+
+export TERM_EMULATOR_BG_DEFAULT
 
 # Function which sets up the terminal for use during demos and explainers
 function presenter_mode_start() {
