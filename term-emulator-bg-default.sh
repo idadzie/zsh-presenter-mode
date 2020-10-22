@@ -5,7 +5,7 @@ set -eo pipefail
 # https://superuser.com/questions/157563/programmatic-access-to-current-xterm-background-color
 
 if [[ -n $TMUX ]]; then
-  echo 'Tmux does not support backgroud color xterm control sequence.'
+  echo -e '\nSorry. Tmux does not support backgroud color xterm control sequence.'
   exit 1
 fi
 
