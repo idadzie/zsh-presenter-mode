@@ -13,7 +13,7 @@ elif [[ -n "$TMUX" ]]; then
   : ${TERM_EMULATOR_BG_DEFAULT:='rgb:2828/2828/2828'}
 fi
 
-export TERM_EMULATOR_BG_DEFAULT
+export TERM_EMULATOR_BG_DEFAULT=${~TERM_EMULATOR_BG_DEFAULT}
 
 # Function which sets up the terminal for use during demos and explainers
 function presenter_mode_start() {
