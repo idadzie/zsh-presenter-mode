@@ -36,7 +36,7 @@ function presenter_mode_start() {
 
   # Set terminal background to black to improve contrast
   if [[ -n "$TMUX" ]]; then
-    tmux select-pane -P 'bg=colour232'
+    echo -e "\ePtmux;\e\033]11;#000000\a\\e\\"
   else
     echo -e "\033]11;#000000\a"
   fi
@@ -57,7 +57,7 @@ function presenter_mode_start() {
 function presenter_mode_stop() {
   # Restore background color
   if [[ -n "$TMUX" ]]; then
-    tmux select-pane -P "bg=${PRESENTER_MODE[BG_DEFAULT]}"
+    echo -e "\ePtmux;\e\033]11;${PRESENTER_MODE[BG_DEFAULT]}\a\\e\\"
   else
     echo -e "\033]11;${PRESENTER_MODE[BG_DEFAULT]}\a"
   fi
