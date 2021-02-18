@@ -58,7 +58,7 @@ Copyright (c) 2019 idadzie
 
 [license badge]: https://img.shields.io/badge/License-MIT-green.svg
 [license]: https://opensource.org/licenses/MIT
-[maintenance badge]: https://img.shields.io/maintenance/yes/2020.svg
+[maintenance badge]: https://img.shields.io/maintenance/yes/2021.svg
 [zplugin]: https://github.com/zdharma/zplugin
 [robo]: https://github.com/robobenklein
 [dotfiles]: https://github.com/robobenklein/configs
