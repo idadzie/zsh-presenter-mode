@@ -6,12 +6,7 @@ typeset -gAH PRESENTER_MODE
 : ${PRESENTER_MODE[BANNER_SHOW]:=1}
 : ${PRESENTER_MODE[SHOW_PREEXEC_ARRAY]:=0}
 : ${PRESENTER_MODE[BANNER_TEXT]:='PRESENTATION MODE'}
-
-if [[ -z "$TMUX" ]]; then
-  : ${PRESENTER_MODE[BG_DEFAULT]:=$(source ${0:h}/bin/get-terminal-emulator-bg-color)}
-elif [[ -n "$TMUX" ]]; then
-  : ${PRESENTER_MODE[BG_DEFAULT]:="#282828"}
-fi
+: ${PRESENTER_MODE[BG_DEFAULT]:="#282828"}
 
 # Function which sets up the terminal for use during demos and explainers
 function presenter_mode_start() {
