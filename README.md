@@ -17,7 +17,7 @@ Add the snippet below to your **.zshrc** file.
 zinit ice wait'0' lucid
 zinit light idadzie/zsh-presenter-mode
 
-# or using the for syntax
+# or using the for syntax.
 zinit light-mode for idadzie/zsh-presenter-mode
 ```
 
@@ -26,7 +26,10 @@ zinit light-mode for idadzie/zsh-presenter-mode
 Clone this repository and source the **zsh-presenter-mode.plugin.zsh** file in your **.zshrc** file.
 
 ```zsh
+# Clone this repository.
 git clone https://github.com/idadzie/zsh-presenter-mode.git $XDG_DATA_HOME/zsh-presenter-mode
+
+# Append to your .zshrc file.
 echo "source $XDG_DATA_HOME/zsh-presenter-mode/zsh-presenter-mode.plugin.zsh" | tee -a "${ZDOTDIR:-$HOME}/.zshrc"
 ```
 
@@ -58,6 +61,7 @@ To not pollute the global namespace, there's a single **$PRESENTER_MODE** hash y
 declare -A PRESENTER_MODE
 PRESENTER_MODE[BANNER_TEXT]='Welcome to My TED Talk!'
 PRESENTER_MODE[BG_DEFAULT]='#2c2c2c'
+PRESENTER_MODE[SHOW_PREEXEC_ARRAY]=1
 
 # Load the plugin below.
 ...
