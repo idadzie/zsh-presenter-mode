@@ -43,6 +43,26 @@ You can change the default key binding by adding the snippet below to your **.zs
 bindkey '\e\e' toggle-presenter-mode
 ```
 
+To not pollute the global namespace, there's a single **$PRESENTER_MODE** hash you can add to your **.zshrc** to customise the default parameters before loading this plugin.
+
+| Hash Field                         | Description                                                  |
+| ---------------------------------- | ------------------------------------------------------------ |
+| PRESENTER_MODE[BANNER_SHOW]        | Show banner text when presentation mode is activated. Default: `1` |
+| PRESENTER_MODE[SHOW_PREEXEC_ARRAY] | Show preexec array when presentation mode is toggled. Default: `0` |
+| PRESENTER_MODE[BANNER_TEXT]        | Banner text when presentation mode is activated. Default: `PRESENTATION MODE` |
+| PRESENTER_MODE[BG_DEFAULT]         | Background colour to set after presentation mode is deactivated. Default: `#282828` |
+
+### Example
+
+```
+declare -A PRESENTER_MODE
+PRESENTER_MODE[BANNER_TEXT]='Welcome to My TED Talk!'
+PRESENTER_MODE[BG_DEFAULT]='#2c2c2c'
+
+# Load the plugin below.
+...
+```
+
 
 ## :handshake: Credit
 
