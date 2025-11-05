@@ -77,7 +77,7 @@ The main [presenter_mode_{start,stop}][presenter-mode] functions were borrowed f
 
 Leave a :star: If you think this project is cool.
 
-[maintenance badge]: https://img.shields.io/maintenance/yes/2023.svg
+[maintenance badge]: https://img.shields.io/maintenance/yes/2025.svg
 [zinit]: https://github.com/zdharma-continuum/zinit
 [robo]: https://github.com/robobenklein
 [dotfiles]: https://github.com/robobenklein/configs
